@@ -135,6 +135,26 @@ render() {
 }
 endsnippet
 
+snippet view "View"
+<View style={${2}}>
+  ${1}
+</View>
+endsnippet
+
+snippet text "Text"
+<Text style={${2}>
+  ${1}
+</Text>
+endsnippet
+
+snippet to "TouchableOpacity"
+<TouchableOpacity
+  onPress={() => ${2}}
+>
+  ${1}
+</TouchableOpacity>
+endsnippet
+
 # PropTypes
 snippet pt "PropTypes Definition" b
 ${1:`!v expand('%:t:r')`.}propTypes = {
@@ -205,3 +225,5 @@ endsnippet
 snippet ir "isRequired" w
 isRequired,
 endsnippet
+
+
